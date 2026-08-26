@@ -1,0 +1,7 @@
+setup.py
+signiture_recognition.egg-info/PKG-INFO
+signiture_recognition.egg-info/SOURCES.txt
+signiture_recognition.egg-info/dependency_links.txt
+signiture_recognition.egg-info/requires.txt
+signiture_recognition.egg-info/top_level.txt
+src/__init__.py
