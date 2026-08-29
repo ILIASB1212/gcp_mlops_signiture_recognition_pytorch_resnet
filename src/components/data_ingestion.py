@@ -49,7 +49,7 @@ class DataIngestion:
 
         logging.info("Entered the initiate_data_ingestion method of Data ingestion class")
         try:
-            self.get_data_from_gcloua()
+            self.get_data_from_gcloud()
             logging.info("Fetched the zipped dataset from Gcloud Storage bucket")
 
             self.unzip_and_clean()

@@ -4,7 +4,7 @@ from src.loggings import logging
 from src.exceptions.custom_exceptions import CustomException
 from src.components.data_ingestion import DataIngestion
 from src.entitys.config import DataIngestionConfig
-from src.entitys.config import DataIngestionConfig
+
 
 class TrainingPipeline:
 
