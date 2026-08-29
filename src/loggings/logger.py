@@ -26,4 +26,4 @@ def get_logger(ops_name):
 
 
 
-log=get_logger("accountant_ai_agent")
+log=get_logger("signature_recognition")

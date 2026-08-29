@@ -21,7 +21,7 @@ class TrainingPipeline:
             logging.info("Exited the start_data_ingestion method of TrainingPipeline class")
             return data_ingestion_artifacts
         except Exception as e:
-            raise CustomException(e, sys) from e
+            raise CustomException(e, sys) 
 
 
 
@@ -30,7 +30,7 @@ class TrainingPipeline:
         try:
             data_ingestion_artifacts = self.start_data_ingestion()
         except Exception as e:
-            raise CustomException(e, sys) from e
+            raise CustomException(e, sys) 
 
     
 
