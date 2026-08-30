@@ -10,3 +10,7 @@ Use_cuda = torch.cuda.is_available()
 DEVICE = torch.device("cuda:0" if Use_cuda else "cpu")
 # Data ingestion constants
 DATA_INGESTION_ARTIFACTS_DIR = 'DataIngestionArtifacts'
+DATA_TRANSFORMATION_ARTIFACTS_DIR = "DataTransformationArtifacts"
+DATA_TRANSFORMATION_TRAIN_FILE_NAME = "train_transformed.pkl"
+DATA_TRANSFORMATION_VALID_FILE_NAME = "valid_transformed.pkl"
+DATA_TRANSFORMATION_TEST_FILE_NAME = "test_transformed.pkl"

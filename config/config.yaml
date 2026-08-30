@@ -1,3 +1,14 @@
 data_ingestion_config:
-  zipr_file_name: archive.zip
-  bucket_name: signature_recognition
+  zip_file_name: archive.zip
+  bucket_name: signature_recognition_1
+
+
+
+data_transformation_config:
+  img_size: 224
+  degree_n: -20
+  degree_p: +20
+  train_ratio: 0.6
+  valid_ratio: 0.3
+  std: [0.229, 0.224, 0.225]
+  mean: [0.485, 0.456, 0.406]
