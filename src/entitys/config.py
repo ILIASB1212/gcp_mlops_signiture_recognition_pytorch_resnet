@@ -21,7 +21,7 @@ class DataIngestionConfig:
 class DataTransformationConfig:
 
 
-    def __Init__ (self):
+    def __init__ (self):
         self.config = read_yaml_file(CONFIG_PATH)
         self.STD: list = self.config['data_transformation_config']["std"]
         self.MEAN: list = self.config['data_transformation_config']["mean"]
