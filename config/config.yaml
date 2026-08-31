@@ -20,3 +20,9 @@ model_trainer_config:
   1r: 0.001
   batch_size: 32
   num_workers: 4
+
+
+model_evaluation_config:
+  batch_size: 52
+  num_workers: 4
+  bucket_name: signature_recognition_1

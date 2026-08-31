@@ -1,4 +1,5 @@
 from dataclasses import dataclass
+from xxlimited import new
 
 # Data Ingestion artifacts
 @dataclass
@@ -25,8 +26,17 @@ class DataTransformationArtifacts:
 
 @dataclass
 class ModelTrainerArtifacts:
-    trained_model_pagh: str
+    trained_model_path: str
 
+
+    def to_dict(self):
+        return self.__dict__
+
+
+
+@dataclass
+class ModelEvaluationArtifacts:
+    is_model_accepted: bool
 
     def to_dict(self):
         return self.__dict__

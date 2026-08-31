@@ -5,6 +5,8 @@ from src.constants import *
 
 
 
+
+
 @dataclass
 class DataIngestionConfig:
     def __init__(self):
@@ -50,3 +52,19 @@ class ModelTrainerConfig:
         self.BATCH_SIZE: int = self.config['model_trainer_config']['batch_size']
         self.MODEL_TRAINER_ARTIFACTS_DIR: str = os.path.join(os.getcwd(), ARTIFACTS_DIR,MODEL_TRAINER_ARTIFACTS_DIR)
         self.TRAINED_MODEL_PATH: str = os.path.join(self.MODEL_TRAINER_ARTIFACTS_DIR,TRAINED_MODEL_PATH)
+
+
+
+@dataclass
+class ModelEvaluationConfig:
+
+
+    def __init__(self):
+        self.config = read_yaml_file(CONFIG_PATH)
+        self.MODEL_NAME: str = MODEL_NAME
+        self.BUCKET_NAME: str = self.config['model_evaluation_config']["bucket_nane"]
+        self.BATCH_SIZE: int = self.config['model_evaluation_config']["batch_size"]
+        self.NUM_WORKERS: int = self.config['model_evaluation_config']["num_workers"]
+        self.MODEL_EVALUATION_ARTIFACTS_DIR: str = os.path.join(os.getcwd(), ARTIFACTS_DIR,
+        MODEL_EVALUATION_ARTIFACTS_DIR)
+        self.BEST_MODEL_DIR: str = os.path.join(self.MODEL_EVALUATION_ARTIFACTS_DIR, BEST_MODEL_DIR)

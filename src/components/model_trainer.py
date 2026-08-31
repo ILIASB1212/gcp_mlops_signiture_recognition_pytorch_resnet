@@ -5,6 +5,8 @@ from src.exceptions.custom_exceptions import CustomException
 
 import os
 import sys
+from src.loggings import logging
+from src.exceptions.custom_exceptions import CustomException
 import torch
 from tqdm import tqdm
 import torch.nn as nn
