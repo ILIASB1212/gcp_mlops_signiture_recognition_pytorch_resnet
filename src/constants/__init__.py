@@ -14,3 +14,7 @@ DATA_TRANSFORMATION_ARTIFACTS_DIR = "DataTransformationArtifacts"
 DATA_TRANSFORMATION_TRAIN_FILE_NAME = "train_transformed.pkl"
 DATA_TRANSFORMATION_VALID_FILE_NAME = "valid_transformed.pkl"
 DATA_TRANSFORMATION_TEST_FILE_NAME = "test_transformed.pkl"
+
+
+MODEL_TRAINER_ARTIFACTS_DIR = "ModelTrainerArtifacts"
+TRAINED_MODEL_PATH = "model.pt"

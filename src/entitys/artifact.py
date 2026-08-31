@@ -20,3 +20,13 @@ class DataTransformationArtifacts:
 
     def to_dict(self):
         return self.__dict__
+
+
+
+@dataclass
+class ModelTrainerArtifacts:
+    trained_model_pagh: str
+
+
+    def to_dict(self):
+        return self.__dict__
