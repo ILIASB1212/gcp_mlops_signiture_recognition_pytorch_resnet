@@ -26,3 +26,8 @@ model_evaluation_config:
   batch_size: 52
   num_workers: 4
   bucket_name: signature_recognition_1
+
+
+
+model_pusher_config:
+bucket_name: signature_recognition_1

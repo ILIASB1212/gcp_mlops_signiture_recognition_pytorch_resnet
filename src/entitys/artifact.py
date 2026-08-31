@@ -40,3 +40,13 @@ class ModelEvaluationArtifacts:
 
     def to_dict(self):
         return self.__dict__
+
+
+
+@dataclass
+class ModelPusherArtifacts:
+    bucket_name: str
+
+
+    def to_dict(self):
+        return self.__dict__

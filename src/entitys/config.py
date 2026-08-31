@@ -68,3 +68,13 @@ class ModelEvaluationConfig:
         self.MODEL_EVALUATION_ARTIFACTS_DIR: str = os.path.join(os.getcwd(), ARTIFACTS_DIR,
         MODEL_EVALUATION_ARTIFACTS_DIR)
         self.BEST_MODEL_DIR: str = os.path.join(self.MODEL_EVALUATION_ARTIFACTS_DIR, BEST_MODEL_DIR)
+
+
+@dataclass
+class ModelPusherConfig:
+    def __init__(self):
+        self.config = read_yaml_file(CONFIG_PATH)
+        self.MODEL_NAME: str = MODEL_NAME
+        self.BUCKET_NAME: str = self.config['model_pusher_config']["bucket_name"]
+
+I
