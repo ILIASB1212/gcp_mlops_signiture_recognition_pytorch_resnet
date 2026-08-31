@@ -77,4 +77,3 @@ class ModelPusherConfig:
         self.MODEL_NAME: str = MODEL_NAME
         self.BUCKET_NAME: str = self.config['model_pusher_config']["bucket_name"]
 
-I
