@@ -17,7 +17,7 @@ data_transformation_config:
 
 model_trainer_config:
   epochs: 1
-  1r: 0.001
+  lr: 0.001
   batch_size: 32
   num_workers: 4
 
