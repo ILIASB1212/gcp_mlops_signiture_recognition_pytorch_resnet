@@ -30,4 +30,4 @@ model_evaluation_config:
 
 
 model_pusher_config:
-bucket_name: signature_recognition_1
+  bucket_name: signature_recognition_1
