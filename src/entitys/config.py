@@ -62,7 +62,7 @@ class ModelEvaluationConfig:
     def __init__(self):
         self.config = read_yaml_file(CONFIG_PATH)
         self.MODEL_NAME: str = MODEL_NAME
-        self.BUCKET_NAME: str = self.config['model_evaluation_config']["bucket_nane"]
+        self.BUCKET_NAME: str = self.config['model_evaluation_config']["bucket_name"]
         self.BATCH_SIZE: int = self.config['model_evaluation_config']["batch_size"]
         self.NUM_WORKERS: int = self.config['model_evaluation_config']["num_workers"]
         self.MODEL_EVALUATION_ARTIFACTS_DIR: str = os.path.join(os.getcwd(), ARTIFACTS_DIR,

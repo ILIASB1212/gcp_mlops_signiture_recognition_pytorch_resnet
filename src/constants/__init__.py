@@ -19,9 +19,10 @@ DATA_TRANSFORMATION_TEST_FILE_NAME = "test_transformed.pkl"
 MODEL_TRAINER_ARTIFACTS_DIR = "ModelTrainerArtifacts"
 TRAINED_MODEL_PATH = "model.pt"
 
-
-
-
 MODEL_EVALUATION_ARTIFACTS_DIR = "ModelEvaluationArtifacts"
 BEST_MODEL_DIR = "best_model"
 MODEL_NAME = "model.pt"
+
+
+APP_HOST = "0.0.0.0"
+APP_PORT = 8080
