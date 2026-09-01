@@ -3,6 +3,7 @@ from fastapi import FastAPI, File
 from uvicorn import run as app_run
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import Response, JSONResponse
+from endpoints.prediction import PredictionPipeline
 from src.pipeline.training import TrainingPipeline
 
 app = FastAPI()
@@ -38,5 +39,16 @@ async def training():
     except Exception as e:
         return Response(f"Error occurred! {e}")
 
+
+
+
+@app.post("/predict")
+async def prediction(image_file: bytes = File(description="A file read as bytes")):
+    try:
+        prediction_pipeline = PredictionPipeline()
+        final_output = prediction_pipeline.run_pipeline(image_file)
+        return final_output
+    except Exception as e:
+        return JSONResponse(content=f"Error Occurred! {e}", status_code=500)
 if __name__ == " __ main __ ":
     app_run(app, host=APP_HOST, port=APP_PORT)

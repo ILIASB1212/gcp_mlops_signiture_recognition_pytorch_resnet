@@ -26,3 +26,7 @@ MODEL_NAME = "model.pt"
 
 APP_HOST = "0.0.0.0"
 APP_PORT = 8080
+
+
+# Prediction Pipeline
+LABEL_NAME = ['Forged', 'Original']

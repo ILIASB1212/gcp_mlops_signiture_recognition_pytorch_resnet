@@ -31,3 +31,11 @@ model_evaluation_config:
 
 model_pusher_config:
   bucket_name: signature_recognition_1
+
+
+prediction_pipeline_config:
+  input_image: input.jpg
+  bucket_name: signature_recognition_1
+  model_name: model.pt
+  threshold: 0.3
+
